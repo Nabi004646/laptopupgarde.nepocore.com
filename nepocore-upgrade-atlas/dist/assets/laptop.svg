@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 395" fill="none">
+<defs>
+<pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#33495a" opacity=".55"/></pattern>
+<linearGradient id="screen" x1="285" y1="35" x2="310" y2="265" gradientUnits="userSpaceOnUse"><stop stop-color="#243c4d"/><stop offset="1" stop-color="#132737"/></linearGradient>
+<linearGradient id="base" x1="170" y1="205" x2="170" y2="364" gradientUnits="userSpaceOnUse"><stop stop-color="#344d5e"/><stop offset="1" stop-color="#182d3e"/></linearGradient>
+<radialGradient id="fade"><stop stop-color="#fff"/><stop offset=".97" stop-color="#000"/></radialGradient>
+<mask id="mask"><rect width="520" height="395" fill="url(#fade)"/></mask>
+</defs>
+<rect width="520" height="395" fill="url(#grid)" mask="url(#mask)"/>
+<path d="M48 328 307 373 490 280 237 231Z" fill="#0d1721" opacity=".55"/>
+<path d="M227 72 466 114 467 126 443 279 199 233 195 224Z" fill="#102130" stroke="#658197" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M230 70 461 110Q468 112 466 120L441 272 195 225 222 77Q223 70 230 70Z" fill="#273d4e" stroke="#8198a8" stroke-width="1.3"/>
+<path d="M233 82 455 121 432 258 208 218Z" fill="url(#screen)" stroke="#587284"/>
+<path d="M237 152 427 185M227 193 416 227M289 102l-20 125m78-114-20 124m78-113-20 123" stroke="#6b8596" stroke-opacity=".17"/>
+<path d="M58 309 194 224 442 271 304 351Z" fill="url(#base)" stroke="#8fa5b2" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M58 309 304 351 442 271v9l-137 81-245-44Z" fill="#142737" stroke="#658197" stroke-linejoin="round"/>
+<path d="m163 286 94 16-32 20-95-17Z" stroke="#6e8da3" opacity=".75"/>
+<path d="m193 237 211 39-82 49-210-39Z" fill="#172c3d" stroke="#5d788c"/>
+<path d="m180 247 205 38m-221-29 205 38m-221-28 205 37m-222-28 205 38m-112-72-80 48m110-42-80 47m111-42-80 48m111-42-80 47m111-42-80 48m110-42-80 47" stroke="#516e82" opacity=".8"/>
+<path d="m252 145 118 21-8 44-118-21Z" fill="#142838" stroke="#fbb46b" stroke-width="1.6"/>
+<path d="m262 158 17 3-4 20-17-3Zm25 4 17 3-4 20-17-3Zm25 5 17 3-4 20-17-3Zm25 4 17 3-4 20-17-3Z" fill="#a5754d" fill-opacity=".32" stroke="#e2a267" stroke-width=".9"/>
+<path d="m255 192-1 6m9-4-1 6m9-4-1 6m9-4-1 6m9-4-1 6m17-3-1 6m9-4-1 6m9-4-1 6m9-4-1 6m9-4-1 6m9-4-1 6" stroke="#e2a267"/>
+<g stroke="#fbb46b" opacity=".86"><path d="M251 145 198 117h-57M368 179l56-26h59M309 345l27 23h88"/><circle cx="251" cy="145" r="3" fill="#fbb46b"/><circle cx="368" cy="179" r="3" fill="#fbb46b"/><circle cx="310" cy="345" r="3" fill="#fbb46b"/></g>
+<g fill="#aebecb" font-family="monospace" font-size="11" letter-spacing="1.3"><text x="76" y="112">MEMORY</text><text x="439" y="147">NVMe</text><text x="370" y="363">PLATFORM</text></g>
+<g stroke="#506c80"><path d="M87 200h16m-8-8v16m373 12h14m-7-7v14M178 56h16m-8-8v16"/></g>
+</svg>

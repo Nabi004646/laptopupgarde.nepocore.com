@@ -1,0 +1,504 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "thinkpad-t480",
+      "manufacturer": "Lenovo",
+      "name": "ThinkPad T480",
+      "series": "T Series",
+      "platform": "Intel Core 7th / 8th Gen",
+      "machineTypes": [
+        "20L5",
+        "20L6"
+      ],
+      "aliases": [
+        "T480"
+      ],
+      "summary": "Two replaceable memory sockets. Main storage uses either a 2.5-inch SATA drive or an M.2 NVMe drive with an adapter.",
+      "sources": {
+        "psref": {
+          "title": "Lenovo Product Specifications Reference",
+          "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T480/ThinkPad_T480_Spec.PDF",
+          "section": "p. 1 · Processor, Memory, Storage and WWAN",
+          "checked": "2026-11-26"
+        },
+        "identity": {
+          "title": "Lenovo Support · machine types",
+          "url": "https://pcsupport.lenovo.com/gb/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t480-type-20l5-20l6/document-userguide",
+          "section": "Product heading",
+          "checked": "2026-11-26"
+        }
+      },
+      "memory": {
+        "type": "DDR4",
+        "speed": "2400 MT/s nominal; 2133 MT/s on listed 7th Gen processors",
+        "sockets": 2,
+        "module": "SO-DIMM",
+        "configurations": [
+          {
+            "id": "socketed",
+            "solderedGB": 0,
+            "documentedMaxGB": 32,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "32 GB total across both sockets."
+          }
+        ],
+        "note": "Lenovo lists 32 GB total. The installed modules can run below their rated speed depending on the processor.",
+        "source": "psref"
+      },
+      "storage": {
+        "positions": [
+          {
+            "position": "Main bay",
+            "form": "2.5-inch",
+            "interface": "SATA",
+            "link": "6 Gb/s",
+            "offering": null,
+            "note": "7 mm height; Lenovo lists both HDD and SSD options.",
+            "source": "psref"
+          },
+          {
+            "position": "Main bay",
+            "form": "M.2 2280",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×2 at the system",
+            "offering": null,
+            "note": "The documented ×4 drive is limited to ×2 by the adapter. Verify the carrier and cable fitted to your unit.",
+            "source": "psref"
+          },
+          {
+            "position": "WWAN position",
+            "form": "M.2",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×2",
+            "offering": "128 GB factory option",
+            "note": "Select configurations only. Shares the position with mobile broadband. Check card length, key and exact part before buying.",
+            "source": "psref"
+          }
+        ],
+        "rule": "The 2.5-inch and M.2 2280 main-bay options are mutually exclusive. The optional secondary SSD occupies the WWAN position and cannot coexist with the WWAN card.",
+        "absoluteLimitGB": null,
+        "source": "psref"
+      },
+      "notes": []
+    },
+    {
+      "id": "thinkpad-t490",
+      "manufacturer": "Lenovo",
+      "name": "ThinkPad T490",
+      "series": "T Series",
+      "platform": "Intel Core 8th / 10th Gen",
+      "machineTypes": [
+        "20N2",
+        "20N3"
+      ],
+      "aliases": [
+        "T490"
+      ],
+      "summary": "One replaceable memory socket alongside soldered RAM. Lenovo documents a single storage drive.",
+      "sources": {
+        "psref": {
+          "title": "Lenovo Product Specifications Reference",
+          "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T490/ThinkPad_T490_Spec.PDF",
+          "section": "pp. 1–2 · Processor, Memory and Storage",
+          "checked": "2026-11-26"
+        },
+        "identity": {
+          "title": "Lenovo Support · machine types",
+          "url": "https://pcsupport.lenovo.com/my/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t490-type-20n2-20n3/20n2",
+          "section": "Product heading",
+          "checked": "2026-11-26"
+        }
+      },
+      "memory": {
+        "type": "DDR4",
+        "speed": "2400 MT/s",
+        "sockets": 1,
+        "module": "SO-DIMM",
+        "configurations": [
+          {
+            "id": "soldered-8",
+            "solderedGB": 8,
+            "documentedMaxGB": 40,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "8 GB onboard plus a 32 GB SO-DIMM."
+          },
+          {
+            "id": "soldered-16",
+            "solderedGB": 16,
+            "documentedMaxGB": 48,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "16 GB onboard plus a 32 GB SO-DIMM."
+          }
+        ],
+        "note": "Lenovo lists DDR4-2666 modules running at DDR4-2400. The maximum in the reference depends on the amount soldered to the board.",
+        "source": "psref"
+      },
+      "storage": {
+        "positions": [
+          {
+            "position": "Primary drive",
+            "form": "M.2 2242",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×2",
+            "offering": "256 GB Lenovo offering",
+            "note": null,
+            "source": "psref"
+          },
+          {
+            "position": "Primary drive",
+            "form": "M.2 2280",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×4",
+            "offering": "1 TB Lenovo offering",
+            "note": "Lenovo also lists a 2280 Optane plus SSD option.",
+            "source": "psref"
+          },
+          {
+            "position": "Primary drive",
+            "form": "M.2 2280",
+            "interface": "SATA",
+            "link": "6 Gb/s",
+            "offering": null,
+            "note": "Lenovo excludes this factory option in EMEA. Confirm support for your exact configuration.",
+            "source": "psref"
+          }
+        ],
+        "rule": "Lenovo specifies one storage drive. The listed formats and interfaces are alternatives.",
+        "absoluteLimitGB": null,
+        "source": "psref"
+      },
+      "notes": []
+    },
+    {
+      "id": "thinkpad-x280",
+      "manufacturer": "Lenovo",
+      "name": "ThinkPad X280",
+      "series": "X Series",
+      "platform": "Intel Core 7th / 8th Gen",
+      "machineTypes": [
+        "20KE",
+        "20KF"
+      ],
+      "aliases": [
+        "X280"
+      ],
+      "summary": "Fully soldered memory. Lenovo documents one M.2 drive with SATA or NVMe depending on the configuration.",
+      "sources": {
+        "psref": {
+          "title": "Lenovo Product Specifications Reference",
+          "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X280/ThinkPad_X280_Spec.PDF",
+          "section": "p. 1 · Processor, Memory and Storage",
+          "checked": "2026-11-26"
+        },
+        "identity": {
+          "title": "Lenovo Support · machine types",
+          "url": "https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x280-type-20kf-20ke/solutions/ht510682-removal-and-replacement-videos-thinkpad-x280-20ke-20kf/",
+          "section": "Product heading",
+          "checked": "2026-11-26"
+        }
+      },
+      "memory": {
+        "type": "DDR4",
+        "speed": "2400 MT/s nominal; 2133 MT/s on listed 7th Gen processors",
+        "sockets": 0,
+        "module": null,
+        "configurations": [
+          {
+            "id": "soldered-4",
+            "solderedGB": 4,
+            "documentedMaxGB": null,
+            "factoryGB": 4,
+            "independentTestGB": null,
+            "note": "Lenovo excludes this configuration in the US and EMEA."
+          },
+          {
+            "id": "soldered-8",
+            "solderedGB": 8,
+            "documentedMaxGB": null,
+            "factoryGB": 8,
+            "independentTestGB": null,
+            "note": null
+          },
+          {
+            "id": "soldered-16",
+            "solderedGB": 16,
+            "documentedMaxGB": null,
+            "factoryGB": 16,
+            "independentTestGB": null,
+            "note": null
+          }
+        ],
+        "note": "Memory is soldered to the system board. Lenovo lists three distinct factory configurations, each fixed at its installed capacity.",
+        "source": "psref"
+      },
+      "storage": {
+        "positions": [
+          {
+            "position": "Primary drive",
+            "form": "M.2",
+            "interface": "SATA",
+            "link": "6 Gb/s",
+            "offering": null,
+            "note": "The platform reference does not specify the drive length for this option.",
+            "source": "psref"
+          },
+          {
+            "position": "Primary drive",
+            "form": "M.2",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×4",
+            "offering": null,
+            "note": "The platform reference does not specify the drive length. Check your exact machine-type model and existing drive.",
+            "source": "psref"
+          }
+        ],
+        "rule": "Lenovo lists SATA and NVMe as configuration alternatives for the primary drive. Confirm your original interface and drive dimensions.",
+        "absoluteLimitGB": null,
+        "source": "psref"
+      },
+      "notes": []
+    },
+    {
+      "id": "thinkpad-t14-gen-1-intel",
+      "manufacturer": "Lenovo",
+      "name": "ThinkPad T14 Gen 1 (Intel)",
+      "series": "T Series",
+      "platform": "Intel Core 10th Gen",
+      "machineTypes": [
+        "20S0",
+        "20S1"
+      ],
+      "aliases": [
+        "T14 Gen 1 (Intel)",
+        "T14 Generation 1 (Intel)"
+      ],
+      "summary": "One replaceable memory socket alongside soldered RAM. The Intel platform uses one M.2 NVMe drive.",
+      "sources": {
+        "psref": {
+          "title": "Lenovo Product Specifications Reference",
+          "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_1_Intel/ThinkPad_T14_Gen_1_Intel_Spec.pdf",
+          "section": "pp. 2–3 · Processor, Memory and Storage",
+          "checked": "2026-11-26"
+        },
+        "identity": {
+          "title": "Lenovo Support · machine types",
+          "url": "https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t14-type-20s0-20s1/20s0",
+          "section": "Product heading",
+          "checked": "2026-11-26"
+        }
+      },
+      "memory": {
+        "type": "DDR4",
+        "speed": "2666 MT/s",
+        "sockets": 1,
+        "module": "SO-DIMM",
+        "configurations": [
+          {
+            "id": "soldered-8",
+            "solderedGB": 8,
+            "documentedMaxGB": 40,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "8 GB onboard plus a 32 GB SO-DIMM."
+          },
+          {
+            "id": "soldered-16",
+            "solderedGB": 16,
+            "documentedMaxGB": 48,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "16 GB onboard plus a 32 GB SO-DIMM."
+          }
+        ],
+        "note": "Lenovo lists DDR4-3200 installed memory running at DDR4-2666. The documented total depends on the soldered capacity.",
+        "source": "psref"
+      },
+      "storage": {
+        "positions": [
+          {
+            "position": "Primary drive",
+            "form": "M.2 2242",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×2",
+            "offering": "128 GB Lenovo offering",
+            "note": null,
+            "source": "psref"
+          },
+          {
+            "position": "Primary drive",
+            "form": "M.2 2280",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×4",
+            "offering": "2 TB Lenovo offering",
+            "note": "Lenovo also lists a 2280 Optane plus SSD option.",
+            "source": "psref"
+          }
+        ],
+        "rule": "Lenovo specifies one drive. The listed lengths are alternatives. Confirm mounting hardware for the length you intend to use.",
+        "absoluteLimitGB": null,
+        "source": "psref"
+      },
+      "notes": []
+    },
+    {
+      "id": "thinkpad-t14-gen-2-intel",
+      "manufacturer": "Lenovo",
+      "name": "ThinkPad T14 Gen 2 (Intel)",
+      "series": "T Series",
+      "platform": "Intel Core 11th Gen",
+      "machineTypes": [
+        "20W0",
+        "20W1"
+      ],
+      "aliases": [
+        "T14 Gen 2 (Intel)",
+        "T14 Generation 2 (Intel)"
+      ],
+      "summary": "One replaceable memory socket alongside soldered RAM. The storage slot is PCIe 3.0 ×4.",
+      "sources": {
+        "psref": {
+          "title": "Lenovo Product Specifications Reference",
+          "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_2_Intel/ThinkPad_T14_Gen_2_Intel_Spec.pdf",
+          "section": "pp. 2–3 · Processor, Memory and Storage",
+          "checked": "2026-11-26"
+        },
+        "identity": {
+          "title": "Lenovo Support · machine types",
+          "url": "https://pcsupport.lenovo.com/np/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t14-gen-2-type-20w0-20w1",
+          "section": "Product heading",
+          "checked": "2026-11-26"
+        }
+      },
+      "memory": {
+        "type": "DDR4",
+        "speed": "3200 MT/s",
+        "sockets": 1,
+        "module": "SO-DIMM",
+        "configurations": [
+          {
+            "id": "soldered-8",
+            "solderedGB": 8,
+            "documentedMaxGB": 40,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "8 GB onboard plus a 32 GB SO-DIMM."
+          },
+          {
+            "id": "soldered-16",
+            "solderedGB": 16,
+            "documentedMaxGB": 48,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "16 GB onboard plus a 32 GB SO-DIMM."
+          }
+        ],
+        "note": "Lenovo documents different total limits for the 8 GB and 16 GB onboard configurations.",
+        "source": "psref"
+      },
+      "storage": {
+        "positions": [
+          {
+            "position": "Primary drive",
+            "form": "M.2 2242",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×4",
+            "offering": "256 GB Lenovo offering",
+            "note": "A documented drive option. Lenovo lists one physical 2280 slot; check the mount for the shorter drive.",
+            "source": "psref"
+          },
+          {
+            "position": "Primary drive",
+            "form": "M.2 2280",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×4 slot",
+            "offering": "2 TB Lenovo offering",
+            "note": "Lenovo lists some Gen 4 SSDs with performance reduced by the system slot.",
+            "source": "psref"
+          }
+        ],
+        "rule": "One documented M.2 2280 slot. The 2242 and 2280 drive options are alternatives.",
+        "absoluteLimitGB": null,
+        "source": "psref"
+      },
+      "notes": []
+    },
+    {
+      "id": "thinkpad-e14-gen-2-intel",
+      "manufacturer": "Lenovo",
+      "name": "ThinkPad E14 Gen 2 (Intel)",
+      "series": "E Series",
+      "platform": "Intel Core 11th Gen",
+      "machineTypes": [
+        "20TA",
+        "20TB"
+      ],
+      "aliases": [
+        "E14 Gen 2 (Intel)",
+        "E14 Generation 2 (Intel)"
+      ],
+      "summary": "One replaceable RAM socket and two separate M.2 NVMe storage positions.",
+      "sources": {
+        "psref": {
+          "title": "Lenovo Product Specifications Reference",
+          "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E14_Gen_2_Intel/ThinkPad_E14_Gen_2_Intel_Spec.pdf",
+          "section": "pp. 2–3 · Processor, Memory and Storage",
+          "checked": "2026-11-26"
+        },
+        "identity": {
+          "title": "Lenovo Support · machine types",
+          "url": "https://pcsupport.lenovo.com/in/en/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-2-type-20ta-20tb/20tb",
+          "section": "Product heading",
+          "checked": "2026-11-26"
+        }
+      },
+      "memory": {
+        "type": "DDR4",
+        "speed": "3200 MT/s",
+        "sockets": 1,
+        "module": "SO-DIMM",
+        "configurations": [
+          {
+            "id": "socketed",
+            "solderedGB": 0,
+            "documentedMaxGB": 32,
+            "factoryGB": null,
+            "independentTestGB": null,
+            "note": "One SO-DIMM holds the documented total."
+          }
+        ],
+        "note": "Lenovo lists one DDR4 SO-DIMM slot and up to 32 GB total.",
+        "source": "psref"
+      },
+      "storage": {
+        "positions": [
+          {
+            "position": "Short slot",
+            "form": "M.2 2242",
+            "interface": "NVMe",
+            "link": "PCIe 3.0 ×4",
+            "offering": "512 GB Lenovo offering",
+            "note": null,
+            "source": "psref"
+          },
+          {
+            "position": "Long slot",
+            "form": "M.2 2280",
+            "interface": "NVMe",
+            "link": "PCIe 4.0 ×4 slot",
+            "offering": "1 TB Lenovo offering",
+            "note": "Lenovo lists PCIe 3.0 ×4 drives among its factory options for this slot.",
+            "source": "psref"
+          }
+        ],
+        "rule": "Lenovo documents up to two drives. Confirm which positions are populated on your unit.",
+        "absoluteLimitGB": null,
+        "source": "psref"
+      },
+      "notes": []
+    }
+  ]
+}

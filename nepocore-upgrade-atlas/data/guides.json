@@ -1,0 +1,56 @@
+[
+  {
+    "id": "identify-your-laptop", "title": "Find your exact laptop model", "icon": "search",
+    "description": "Locate the machine type and distinguish models with nearly identical names.",
+    "sections": [
+      ["Find the machine type", "Read the model and machine-type model (MTM) from the label on the laptop or original box. Lenovo also documents finding the model-type number in Windows. Keep the serial number private. Search the Atlas by model or one of the listed four-character machine types."],
+      ["Match the platform", "Compare the exact generation, processor family and machine type with the record. A T14 sticker alone leaves both the generation and processor platform open. On a used device, check the current configuration as well as the original model listing, since parts may have changed."]
+    ],
+    "sources": [["Lenovo Support · Product and model-type identification", "https://support.lenovo.com/us/en/solutions/ht510152"]]
+  },
+  {
+    "id": "soldered-vs-socketed", "title": "Soldered vs. replaceable RAM", "icon": "ram",
+    "description": "Find out what a memory socket changes and how onboard RAM affects capacity.",
+    "sections": [
+      ["Read both fields", "Soldered memory is attached to the system board. Replaceable memory sits in a socket. A laptop can have both. The X280 has no RAM sockets, while the T14 Gen 2 Intel has a replaceable SO-DIMM alongside its onboard memory."],
+      ["Check your installed configuration", "On the T14 Gen 2 Intel, Lenovo documents 40 GB total with 8 GB onboard and a 32 GB module, or 48 GB total with 16 GB onboard and a 32 GB module. Identify your onboard capacity and check whether the socket already holds a module."]
+    ],
+    "sources": [["Lenovo PSREF · X280, Memory", "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X280/ThinkPad_X280_Spec.PDF"], ["Lenovo PSREF · T14 Gen 2 Intel, p. 3", "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_2_Intel/ThinkPad_T14_Gen_2_Intel_Spec.pdf"]]
+  },
+  {
+    "id": "memory-compatibility", "title": "Memory generations and compatibility", "icon": "ram",
+    "description": "Check DDR generation, module format, speed and capacity before ordering.",
+    "sections": [
+      ["Start with generation and format", "A DDR5 module cannot fit a DDR4 socket. Check the DDR generation and module type on the model page. SO-DIMM is a module format, so a SO-DIMM listing still needs to state the correct DDR generation."],
+      ["Check rated and operating speed", "Look up the laptop’s documented speed and the module specification. Lenovo lists DDR4-3200 installed modules on the T14 Gen 1 Intel that run at DDR4-2666. Check the supported capacity for your exact soldered configuration as well."]
+    ],
+    "sources": [["Kingston · Memory generations and speed", "https://www.kingston.com/en/blog/gaming/the-ultimate-ram-guide-for-gamers"], ["Lenovo PSREF · T14 Gen 1 Intel, p. 2", "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_1_Intel/ThinkPad_T14_Gen_1_Intel_Spec.pdf"]]
+  },
+  {
+    "id": "storage-formats", "title": "Storage form factors and interfaces", "icon": "drive",
+    "description": "Decode M.2 2242, M.2 2280, SATA and PCIe NVMe.",
+    "sections": [
+      ["Match the physical dimensions", "M.2 2242 cards measure 22 by 42 mm. M.2 2280 cards measure 22 by 80 mm. Check the mounting point and hardware. For a 2.5-inch bay, check the required thickness as well."],
+      ["Match the interface separately", "M.2 describes the physical format. M.2 SSDs can use SATA or PCIe, and a laptop socket may support one or both. Confirm the drive protocol, slot, key and length in the laptop’s specifications. Some configurations need a specific carrier or adapter."]
+    ],
+    "sources": [["Kingston · SATA and M.2 SSD FAQs", "https://www.kingston.com/en/ssd/ssd-faq"], ["Lenovo PSREF · T480, Storage", "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T480/ThinkPad_T480_Spec.PDF"]]
+  },
+  {
+    "id": "factory-vs-upgrade-limits", "title": "Factory options vs. upgrade limits", "icon": "book",
+    "description": "Read capacity figures in the context of the manufacturer’s evidence.",
+    "sections": [
+      ["Read the footnotes", "A factory figure describes what was offered on a configured device. A documented supported maximum is the amount the manufacturer specifies for the configuration under discussion. The T14 Gen 2 Intel specification bases its storage capacities on Lenovo’s offerings and leaves room for larger storage."],
+      ["Know what the evidence covers", "An independent test would need to identify the exact machine type, component and conditions. A report without those details is a possibility to investigate. The Atlas labels hardware evidence by source and displays unknown where it has no substantiated figure."]
+    ],
+    "sources": [["Lenovo PSREF · T14 Gen 2 Intel, p. 3, Memory and Storage notes", "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_2_Intel/ThinkPad_T14_Gen_2_Intel_Spec.pdf"]]
+  },
+  {
+    "id": "buying-checklist", "title": "Check before buying a component", "icon": "check",
+    "description": "Confirm the configuration, mounting hardware and exact part details.",
+    "sections": [
+      ["Confirm the current configuration", "Record the model and four-character machine type. For RAM, verify soldered capacity, installed modules and available sockets. For storage, verify the current drive’s dimensions, interface and mounting hardware. Confirm the manufacturer’s instructions for accessing your exact unit."],
+      ["Check the part listing", "Match the component specification against both the laptop documentation and the part datasheet. Check for exclusions such as a shared WWAN position or a main bay that accepts only one drive arrangement. If a detail is unclear, confirm it before ordering."]
+    ],
+    "sources": [["Lenovo · T480 Guides & Manuals", "https://pcsupport.lenovo.com/gb/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t480-type-20l5-20l6/document-userguide"], ["Lenovo PSREF · T480, Memory and Storage", "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T480/ThinkPad_T480_Spec.PDF"], ["Kingston · SATA and M.2 SSD FAQs", "https://www.kingston.com/en/ssd/ssd-faq"]]
+  }
+]
